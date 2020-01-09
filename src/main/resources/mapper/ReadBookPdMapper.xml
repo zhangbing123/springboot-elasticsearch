@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zb.elasticsearch.mapper.ReadBookPdMapper">
+    <resultMap id="BaseResultMap" type="com.zb.elasticsearch.entity.ReadBookPd">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="en_name" property="enName" jdbcType="VARCHAR"/>
+        <result column="author" property="author" jdbcType="VARCHAR"/>
+        <result column="imgurl" property="imgurl" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="creator" property="creator" jdbcType="INTEGER"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP"/>
+        <result column="status" property="status" jdbcType="INTEGER"/>
+        <result column="comment_num" property="commentNum" jdbcType="INTEGER"/>
+        <result column="price" property="price" jdbcType="INTEGER"/>
+        <result column="category" property="category" jdbcType="VARCHAR"/>
+        <result column="discription" property="discription" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+    id, name, en_name, author, imgurl, create_time, creator, update_time, status, comment_num, 
+    price, category,discription
+  </sql>
+
+</mapper>
